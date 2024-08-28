@@ -13,4 +13,9 @@ This repository contains the code for a **Blog Website** designed to showcase bl
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/blog-website.git
+   git clone https://github.com/amanuelmandefro3/next-blog.git
+
+
+![alt text](<public/Screenshot 2024-08-28 180134.png>)![alt text](<public/Screenshot 2024-08-28 180211.png>)![alt text](<public/Screenshot 2024-08-28 182247.png>)![alt text](<public/Screenshot 2024-08-28 182415.png>)
+
+[Vercel Link](https://vercel.com/)

@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Blog } from '@/libs/redux/types';
 
+
 interface BlogItemProps {
   blog: Blog;
 }
@@ -13,7 +14,7 @@ const BlogItem: React.FC<BlogItemProps> = ({ blog }) => {
         <div className="user flex gap-5 items-center mt-8">
           <div className="relative w-[90px] h-[90px] border rounded-full overflow-hidden">
             <Image
-              src={blog.author?.image || "https://via.placeholder.com/90"}
+              src={blog.author?.image || "https://res.cloudinary.com/djtkzulun/image/upload/v1702997841/A2sv/lumtcitvklvajczcynqe.png"}
               alt="profile"
               layout="fill" // Fill the container
               objectFit="cover" // Ensures the image covers the container
@@ -21,9 +22,9 @@ const BlogItem: React.FC<BlogItemProps> = ({ blog }) => {
           </div>
           <div className="flex flex-col gap-2">
             <div className="flex items-center">
-              <h1 className="font-semibold text-xl">{blog.author?.name || "Unknown"} {" . "}</h1>
+              <h1 className="font-semibold text-xl">{blog.author?.name || "John Doe"} {" . "}</h1>
               <span className="text-gray-500 font-medium text-[18px]">
-                {new Date(blog.createdAt).toLocaleDateString()}
+                {" "}{new Date(blog.createdAt).toLocaleDateString()}
               </span>
             </div>
             <div className="text-gray-500 text-[18px] font-semibold">
